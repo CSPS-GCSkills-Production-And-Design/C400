@@ -1,0 +1,90 @@
+<section class="col-md-12 LOM-frame" id="LOMfr_2"><section class="LOM-element" id="LOM_el_1" data-lom-element="text"><div class="LOM-editable" id="LOM_edit_1"><h1><abbr title="grippe A">H1N1</abbr>&nbsp;au Canada</h1>
+</div></section></section>
+<section class="col-md-12 LOM-frame converted-page" id="LOMfr_1" role="content" data-converted-page="m98-33">
+    <section class="LOM-element" id="LOM_el_2" data-lom-element="text"><div class="LOM-editable" id="LOM_edit_2"><p>Même si la plupart des situations d’urgence débutent à l’échelle locale, la pandémie de grippe A (<abbr>H1N1</abbr>) a pris forme à l’extérieur du Canada.</p>
+</div></section>
+    
+<section class="LOM-element" id="LOM_el_3" data-lom-element="custom">
+	<div class="timelineWidget row">
+        <div class="lnks-timeline">
+            <a class="lnk-timeline col-md-2 col-sm-4 col-xs-4 active" id="timeline-1" aria-expanded="true" aria-controls="inline-cnt-1" href="#">
+                <span class="arrow-left"></span>
+				<div class="LOM-editable" id="LOM_edit_3"><p>Le 18 mars 2009</p>
+</div>
+            </a>
+            <a class="lnk-timeline col-md-2 col-sm-4 col-xs-4" id="timeline-2" href="#">
+                <span class="arrow-left"></span>
+				<div class="LOM-editable" id="LOM_edit_4"><p>Le 25 avril 2009</p>
+</div>
+            </a>
+            <a class="lnk-timeline col-md-2 col-sm-4 col-xs-4" id="timeline-3" href="#">
+                <span class="arrow-left"></span>
+				<div class="LOM-editable" id="LOM_edit_5"><p>Le 26 avril 2009</p>
+</div>
+            </a>
+            <a class="lnk-timeline col-md-2 col-sm-4 col-xs-4" id="timeline-4" href="#">
+                <span class="arrow-left"></span>
+				<div class="LOM-editable" id="LOM_edit_6"><p>Le 29 avril 2009</p>
+</div>
+            </a>
+            
+        </div><!--lnks-timeline-->
+        <div class="cnt-timeline col-md-11">
+            <div class="inline-cnt" id="inline-cnt-1" aria-hidden="false" style="display: block;">
+				<div class="LOM-editable" id="LOM_edit_7"><p><strong>Le 18 mars 2009</strong></p>
+
+<p>Le 18 mars 2009, le Canada a été informé de l’éclosion d’une maladie respiratoire aiguë d’étiologie inconnue à La Gloria, à Veracruz, au Mexique.</p>
+</div>
+            </div>
+            <div class="inline-cnt" id="inline-cnt-2">
+				<div class="LOM-editable" id="LOM_edit_8"><p><strong>Le 25 avril 2009</strong></p>
+
+<p>Le 25 avril 2009, l’Organisation mondiale de la Santé (<abbr>OMS</abbr>) a avisé les personnes concernées que le virus, considéré comme un membre de la famille&nbsp;<abbr title="grippe A">H1N1</abbr>, posait un risque potentiel de pandémie. On a déclaré que la grippe A (<abbr>H1N1</abbr>) était la première urgence officielle de préoccupation internationale en matière de santé publique.</p>
+</div>
+            </div>
+            <div class="inline-cnt" id="inline-cnt-3">
+				<div class="LOM-editable" id="LOM_edit_9"><p><strong>Le 26 avril 2009</strong></p>
+
+<p>Le 26 avril 2009, le Canada a annoncé ses premiers cas de&nbsp;<abbr title="grippe A">H1N1</abbr>&nbsp;: quatre en Nouvelle-Écosse et deux en Colombie- Britannique.</p>
+</div>
+            </div>
+            <div class="inline-cnt" id="inline-cnt-4">
+				<div class="LOM-editable" id="LOM_edit_10"><p><strong>Le 29 avril 2009</strong></p>
+
+<p>Le 29 avril 2009, on a confirmé le premier cas de décès des suites de la grippe A (<abbr>H1N1</abbr>) aux États-Unis. Il s’agissait d’un enfant mexicain de 23 mois du Texas. Le même jour, l’<abbr title="l’Organisation mondiale de la Santé">OMS</abbr>&nbsp;a augmenté son niveau d’alerte à la pandémie au niveau maximal, et les États-Unis ont demandé aux laboratoires pharmaceutiques du monde entier de créer un vaccin pour se préparer en vue de cette imminente pandémie.</p>
+</div>
+            </div>
+        </div> <!--cnt-timeline-->        
+    </div> <!--timelineWidget-->
+</section></section>
+
+
+<script type="text/javascript">
+	$(document).ready(function(e) {
+		// init la premiere timeline
+		$("#inline-cnt-1").show().attr('aria-hidden','false');
+		$('#timeline-1').attr('aria-controls','inline-cnt-1')
+		.attr('aria-expanded','true');
+	});
+	$(".lnk-timeline").click(function(e){                                        
+		e.preventDefault();
+		idCurrent = $('.lnk-timeline.active').attr('id').substring(9);                                                                                            
+		idClicked= $(this).attr('id');
+		
+		// désactiver la timeline courrante
+		$('#inline-cnt-'+idCurrent).hide();                                           
+		$('#timeline-'+idCurrent).removeClass('active')
+		$('#inline-cnt-'+idCurrent).attr('aria-expanded','false')
+		.attr('aria-hidden','true');
+		
+		//activer le timeline cliqué
+		$('#'+idClicked).addClass('active')
+		.attr('aria-controls','inline-cnt-'+idClicked.substring(9))                                 
+		.attr('aria-expanded','true');
+		$('#inline-cnt-'+idClicked.substring(9)).show().attr('aria-hidden','false');                                              
+		/*$('#inline-cnt-'+idClicked.substring(9)).animate({
+		height: 'toggle'
+		}).attr('aria-hidden','false');*/
+	});
+
+</script><div class="bg-danger" id="not-LOM-warning"><p><span class="glyphicon glyphicon-warning-sign"><span> This page's code structure has been converted to Learn-O-Matic's structure automatically. You can undo this conversion by selecting “Undo”:</span></span></p><p><button class="btn btn-default" id="LOM-convert-undo">Undo</button></p></div>

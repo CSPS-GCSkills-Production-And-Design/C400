@@ -1,0 +1,14 @@
+{
+    "name": "Federal Basic Emergency Management",
+    "code": "C400",
+    "teams": ["GcSkills"],
+    "users": {
+    	"sjomphe":{
+    		"role":"reviewer"
+    	},
+    	"sstgermain":{
+    		"role":"admin",
+    		"owner":"true"
+    	}
+    }
+}

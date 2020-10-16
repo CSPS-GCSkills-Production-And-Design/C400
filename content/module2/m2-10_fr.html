@@ -1,0 +1,122 @@
+
+<!-- top banner + 2 bars + footer -->
+<section class="row">
+	<section class="col-md-12 LOM-frame" id="LOMfr_1"><section class="LOM-element placeholder default" id="LOM_el_1" data-lom-element="text" data-lom-subtype="title"><h1><div class="LOM-editable" id="LOM-edit-1"><p>Processus d’évaluation du risque</p></div></h1>
+<!-- default Object, spawns an object picker -->
+
+</section></section>
+
+
+</section>
+<section class="row">
+	<section class="col-md-8 LOM-frame" id="LOMfr_2"><section class="LOM-element" id="LOM_el_2" data-lom-element="text">
+	<!-- This element is a plain Text area -->
+	<div class="LOM-editable" id="LOM-edit-2"><p>Le processus d’évaluation du risque comporte quatre étapes.</p></div>
+</section><section class="LOM-element instructional ribbon click" id="LOM_el_3" data-lom-element="text">
+	<!-- This element is a plain Text area -->
+	<div class="LOM-editable" id="LOM-edit-3"><p>Cliquez sur chaque étape pour en apprendre davantage.</p></div>
+</section><section class="LOM-element" id="LOM_el_4" data-lom-element="custom">
+	<div class="timelineWidget row">
+        <div class="lnks-timeline">
+            <a class="lnk-timeline col-md-2 col-sm-4 col-xs-4 active" id="timeline-1" aria-expanded="true" aria-controls="inline-cnt-1" href="#">
+                <span class="arrow-left"></span>
+				<div class="LOM-editable" id="LOM-edit-4"><span>Étape 1</span></div>
+            </a>
+            <a class="lnk-timeline col-md-2 col-sm-4 col-xs-4" id="timeline-2" href="#">
+                <span class="arrow-left"></span>
+				<div class="LOM-editable" id="LOM-edit-5"><span>Étape 2</span></div>
+            </a>
+            <a class="lnk-timeline col-md-2 col-sm-4 col-xs-4" id="timeline-3" href="#">
+                <span class="arrow-left"></span>
+				<div class="LOM-editable" id="LOM-edit-6"><span>Étape 3</span></div>
+            </a>
+            <a class="lnk-timeline col-md-2 col-sm-4 col-xs-4" id="timeline-4" href="#">
+                <span class="arrow-left"></span>
+				<div class="LOM-editable" id="LOM-edit-7"><span>Étape 4</span></div>
+            </a>
+            
+        </div><!--lnks-timeline-->
+        <div class="cnt-timeline col-md-11">
+            <div class="inline-cnt" id="inline-cnt-1" aria-expanded="false" aria-hidden="false" style="display: block;">
+				<div class="LOM-editable" id="LOM-edit-8"><ol>
+	<li>Déterminer les risques et les capacités&nbsp;(cerner et décrire les aléas et les menaces).</li>
+</ol>
+</div>
+            </div>
+            <div class="inline-cnt" id="inline-cnt-2">
+				<div class="LOM-editable" id="LOM-edit-9"><ol start="2">
+	<li>Analyser les risques
+	<ul>
+		<li>évaluer la possibilité/probabilité que ces risques surviennent</li>
+		<li>analyser leurs conséquences/répercussions</li>
+		<li>envisager les vulnérabilités</li>
+	</ul>
+	</li>
+</ol>
+</div>
+            </div>
+            <div class="inline-cnt" id="inline-cnt-3">
+				<div class="LOM-editable" id="LOM-edit-10"><ol start="3">
+	<li>Évaluer les risques
+	<ul>
+		<li>classer les risques par priorité</li>
+	</ul>
+	</li>
+</ol>
+</div>
+            </div>
+            <div class="inline-cnt" id="inline-cnt-4">
+				<div class="LOM-editable" id="LOM-edit-11"><ol start="4"><li>Cerner les options de prévention/d’atténuation des risques<ul><li>éviter le risque</li><li>supprimer la source du risque</li><li>changer la probabilité (nature ou ampleur)</li><li>changer les conséquences ou les répercussions</li><li>partager le risque avec une autre partie</li><li>conserver ou ignorer le risque</li></ul></li></ol></div>
+            </div>
+        </div> <!--cnt-timeline-->        
+    </div> <!--timelineWidget-->
+</section></section>
+	<section class="col-md-4 LOM-frame" id="LOMfr_3"><section class="LOM-element encadrage circle-bundle dyk" id="LOM_el_5" data-lom-element="text">
+	<div class="encadrage">
+    	<div class="encadrage_header">
+            <span class="lightbulb icon"></span><div class="LOM-editable" id="LOM-edit-20"><h2>Le saviez-vous?</h2></div>
+        </div> 
+		<div class="LOM-editable" id="LOM-edit-21"><p>Le Centre intégré d’évaluation du terrorisme (<abbr>CIET</abbr>) a entrepris ses activités en octobre 2014 du fait des mesures adoptées par la politique de sécurité nationale en réponse aux menaces terroristes.</p>
+
+<p>Le CIET est le seul organisme fédéral dont le principal objectif est d’analyser les menaces terroristes qui pèsent sur le Canada et les intérêts canadiens dans le monde, en se fondant sur les renseignements de sécurité fournis par les organismes partenaires au Canada et à l’étranger. Le CIET constitue la seule source d’évaluation de la menace à l’échelle de la collectivité pour le gouvernement du Canada.</p>
+</div>
+    </div>
+</section></section>
+
+
+</section>
+<section class="row">
+	<section class="col-md-12 LOM-frame" id="LOMfr_4"></section>
+
+
+</section>
+
+<script type="text/javascript">
+	$(document).ready(function(e) {
+		// init la premiere timeline
+		$("#inline-cnt-1").show().attr('aria-hidden','false');
+		$('#timeline-1').attr('aria-controls','inline-cnt-1')
+		.attr('aria-expanded','true');
+	});
+	$(".lnk-timeline").click(function(e){                                        
+		e.preventDefault();
+		idCurrent = $('.lnk-timeline.active').attr('id').substring(9);                                                                                            
+		idClicked= $(this).attr('id');
+		
+		// désactiver la timeline courrante
+		$('#inline-cnt-'+idCurrent).hide();                                           
+		$('#timeline-'+idCurrent).removeClass('active')
+		$('#inline-cnt-'+idCurrent).attr('aria-expanded','false')
+		.attr('aria-hidden','true');
+		
+		//activer le timeline cliqué
+		$('#'+idClicked).addClass('active')
+		.attr('aria-controls','inline-cnt-'+idClicked.substring(9))                                 
+		.attr('aria-expanded','true');
+		$('#inline-cnt-'+idClicked.substring(9)).show().attr('aria-hidden','false');                                              
+		/*$('#inline-cnt-'+idClicked.substring(9)).animate({
+		height: 'toggle'
+		}).attr('aria-hidden','false');*/
+	});
+
+</script>

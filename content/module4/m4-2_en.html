@@ -1,0 +1,88 @@
+<section class="col-md-12 LOM-frame" id="LOMfr_2"><section class="LOM-element" data-lom-element="text" id="LOM_el_1"><div class="LOM-editable" id="LOM_edit_1"><h1><abbr title="Influenza A">H1N1</abbr> in Canada</h1></div></section></section>
+<section role="content" class="col-md-12 LOM-frame converted-page" id="LOMfr_1" data-converted-page="m98-33">
+    <section class="LOM-element" data-lom-element="text" id="LOM_el_2"><div class="LOM-editable" id="LOM_edit_2"><p>While the majority of emergencies begin locally, the <abbr title="Influenza A">H1N1</abbr> pandemic originated outside of Canada.</p></div></section>
+    
+<section class="LOM-element" data-lom-element="custom" id="LOM_el_3">
+	<div class="timelineWidget row">
+        <div class="lnks-timeline">
+            <a id="timeline-1" class="lnk-timeline col-md-2 col-sm-4 col-xs-4 active" href="#" aria-controls="inline-cnt-1" aria-expanded="true">
+                <span class="arrow-left"></span>
+				<div class="LOM-editable" id="LOM_edit_3"><p>March 18, 2009</p>
+</div>
+            </a>
+            <a id="timeline-2" class="lnk-timeline col-md-2 col-sm-4 col-xs-4" href="#">
+                <span class="arrow-left"></span>
+				<div class="LOM-editable" id="LOM_edit_4"><p>April 25, 2009</p>
+</div>
+            </a>
+            <a id="timeline-3" class="lnk-timeline col-md-2 col-sm-4 col-xs-4" href="#">
+                <span class="arrow-left"></span>
+				<div class="LOM-editable" id="LOM_edit_5"><p>April 26, 2009</p>
+</div>
+            </a>
+            <a id="timeline-4" class="lnk-timeline col-md-2 col-sm-4 col-xs-4" href="#">
+                <span class="arrow-left"></span>
+				<div class="LOM-editable" id="LOM_edit_6"><p>April 29, 2009</p>
+</div>
+            </a>
+            
+        </div><!--lnks-timeline-->
+        <div class="cnt-timeline col-md-11">
+            <div id="inline-cnt-1" class="inline-cnt" aria-hidden="false">
+				<div class="LOM-editable" id="LOM_edit_7"><p><strong>March 18, 2009</strong></p>
+
+<p>On March 18, 2009, Canada became aware of an outbreak of an acute respiratory illness of unknown etiology in La Gloria, Veracruz, Mexico.</p>
+</div>
+            </div>
+            <div id="inline-cnt-2" class="inline-cnt">
+				<div class="LOM-editable" id="LOM_edit_8"><p><strong>April 25, 2009</strong></p>
+
+<p>On April 25, 2009, the World Health Organization (<abbr>WHO</abbr>) warned that the virus, identified as a member of the <abbr title="Influenza A">H1N1</abbr> family, had pandemic potential. They declared Influenza A (<abbr>H1N1</abbr>) the first official <abbr title="Public Health Emergency of International Concern">PHEIC</abbr> (public health emergency of international concern.)</p>
+</div>
+            </div>
+            <div id="inline-cnt-3" class="inline-cnt">
+				<div class="LOM-editable" id="LOM_edit_9"><p><strong>April 26, 2009</strong></p>
+
+<p>On April 26, 2009, Canada announced its first cases of <abbr title="Influenza A">H1N1</abbr>: four in Nova Scotia and two in British Columbia.</p>
+</div>
+            </div>
+            <div id="inline-cnt-4" class="inline-cnt">
+				<div class="LOM-editable" id="LOM_edit_10"><p><strong>April 29, 2009</strong></p>
+
+<p>On April 29, 2009, a 23-month-old Mexican child from Texas was the first confirmed <abbr title="Influenza A">H1N1</abbr> fatality in the United States. That same day, the <abbr title="World Health Organization">WHO</abbr> raised its pandemic alert to maximum level and the United Nations called on pharmaceutical laboratories around the world to produce vaccines to prepare for this imminent pandemic.</p>
+</div>
+            </div>
+        </div> <!--cnt-timeline-->        
+    </div> <!--timelineWidget-->
+</section></section>
+
+<div class="bg-danger" id="not-LOM-warning"><p><span class="glyphicon glyphicon-warning-sign"><span> This page's code structure has been converted to Learn-O-Matic's structure automatically. You can undo this conversion by selecting “Undo”:</span></span></p><p><button class="btn btn-default" id="LOM-convert-undo">Undo</button></p></div>
+<script type="text/javascript">
+	$(document).ready(function(e) {
+		// init la premiere timeline
+		$("#inline-cnt-1").show().attr('aria-hidden','false');
+		$('#timeline-1').attr('aria-controls','inline-cnt-1')
+		.attr('aria-expanded','true');
+	});
+	$(".lnk-timeline").click(function(e){                                        
+		e.preventDefault();
+		idCurrent = $('.lnk-timeline.active').attr('id').substring(9);                                                                                            
+		idClicked= $(this).attr('id');
+		
+		// désactiver la timeline courrante
+		$('#inline-cnt-'+idCurrent).hide();                                           
+		$('#timeline-'+idCurrent).removeClass('active')
+		$('#inline-cnt-'+idCurrent).attr('aria-expanded','false')
+		.attr('aria-hidden','true');
+		
+		//activer le timeline cliqué
+		$('#'+idClicked).addClass('active')
+		.attr('aria-controls','inline-cnt-'+idClicked.substring(9))                                 
+		.attr('aria-expanded','true');
+		$('#inline-cnt-'+idClicked.substring(9)).show().attr('aria-hidden','false');                                              
+		/*$('#inline-cnt-'+idClicked.substring(9)).animate({
+		height: 'toggle'
+		}).attr('aria-hidden','false');*/
+	});
+
+</script>

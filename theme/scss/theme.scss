@@ -1,0 +1,458 @@
+
+@import "../scss/_vars";
+@import "../../common/scss/utils/_utils";
+@import "../scss/_fonts";
+@import "../scss/_timeline";
+@import "../scss/_encadrage";
+@import "../scss/_interactions";
+
+
+/* *************************************************
+ * CUSTOM
+ * ************************************************/
+
+.overlay-def .modal-title {
+    font-size: 1.15em;
+    padding: 10px 0;
+	color: white!important;
+}
+
+.timelineWidget{
+	min-height:385px;
+}
+/*
+#dynamic_content h1 p {
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+#dynamic_content details {
+	margin-left:20px;
+	line-height:1.5;
+}
+
+#dynamic_content .qs-elearning-activity {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#dynamic_content .tabpanels details{
+	margin-left: 0px!important;
+}
+
+#dynamic_content .timelineWidget{
+	margin-left: 0px!important;
+}
+*/
+
+html:not(.LOM-pageEdit-active) #not-LOM-warning{
+	display: none;
+}
+
+/* -----------------------------------------------------
+
+                  widget timeline
+				  
+-------------------------------------------------------*/	
+
+.lnks-timeline{
+	display:inline-block;
+	width:100%;
+}
+
+.lnk-timeline.active, .lnk-timeline:active{background:#900f08 !important;}
+.lnk-timeline.active:after, .lnk-timeline:active:after{border-left-color:#900f08 !important; content:''}
+
+.lnk-timeline {
+	position: relative;
+	/*background: #589bc4;	*/
+	background: #6c6c6c;
+	margin-right: 16px;
+	display:inline-block;
+	height:32px;
+	margin-top:5px;
+	padding-left: 25px;
+}
+.lnk-timeline h4{margin-top:0px;}
+
+
+.lnk-timeline:hover{background:#900f08;}
+.lnk-timeline,
+.lnk-timeline:focus,
+.lnk-timeline:hover{text-decoration:none;}
+
+.lnk-timeline:after, .lnk-timeline:before {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.lnk-timeline:hover:after{
+	border-left-color: #900f08;
+}
+.lnk-timeline:after {
+	border-left-color: #6c6c6c;
+	border-width: 16px;
+	margin-top: -16px;
+}
+.lnk-timeline:hover:before {
+	border-color: #414143;
+}
+
+.lnk-timeline .arrow-left{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 16px 0 16px 15.7px;
+	border-color: transparent transparent transparent #ffffff;
+}
+.lnk-timeline .LOM-editable{
+	text-align: center;
+	margin-bottom: 0px;
+	line-height: 32px;
+	color:#fff;
+}
+.cnt-timeline{
+	border: thin solid #ccc;
+	padding: 20px;
+	background:#faf5f5;
+}
+.inline-cnt{ display:none;}
+
+/**************************
+	 Map w/hotspots
+**************************/
+#mapBackground{
+	width:480px;
+	height:400px;
+	margin:0 auto;
+	position:relative;
+}
+
+.hotspots{
+	width:28px;
+	height:28px;
+}
+
+
+/****** Hotspot 1 ******/
+#spot1{
+	position:absolute;
+	cursor:pointer;	
+	top:244.5px;
+	left: 54.5px;
+	background-image: url('../content/medias/images/m4-15_map_spots-01.png') ;
+}
+
+#spot1:hover{
+	background-image:url('../content/medias/images/m4-15_map_spots-01_hover.png') ;
+}
+
+/****** Hotspot 2 ******/
+#spot2{
+	position:absolute;
+	cursor:pointer;	
+	top:256.5px;
+	left: 99.5px;
+	background-image: url('../content/medias/images/m4-15_map_spots-02.png') ;
+}
+
+#spot2:hover{
+	background-image:url('../content/medias/images/m4-15_map_spots-02_hover.png') ;
+}
+
+/****** Hotspot 3 ******/
+#spot3{
+	position:absolute;
+	cursor:pointer;	
+	top:263.5px;
+	left: 142.5px;
+	background-image: url('../content/medias/images/m4-15_map_spots-03.png') ;
+}
+
+#spot3:hover{
+	background-image:url('../content/medias/images/m4-15_map_spots-03_hover.png') ;
+}
+
+/****** Hotspot 4 ******/
+#spot4{
+	position:absolute;
+	cursor:pointer;	
+	top:258.5px;
+	left: 181.5px;
+	background-image: url('../content/medias/images/m4-15_map_spots-04.png') ;
+}
+
+#spot4:hover{
+	background-image:url('../content/medias/images/m4-15_map_spots-04_hover.png') ;
+}
+
+/****** Hotspot 5 ******/
+#spot5{
+	position:absolute;
+	cursor:pointer;	
+	top:334.5px;
+	left: 322.5px;
+	background-image: url('../content/medias/images/m4-15_map_spots-05.png') ;
+}
+
+#spot5:hover{
+	background-image:url('../content/medias/images/m4-15_map_spots-05_hover.png') ;
+}
+
+/****** Hotspot 6 ******/
+#spot6{
+	position:absolute;
+	cursor:pointer;	
+	top:306.5px;
+	left: 390.5px;
+	background-image: url('../content/medias/images/m4-15_map_spots-06.png') ;
+}
+
+#spot6:hover{
+	background-image:url('../content/medias/images/m4-15_map_spots-06_hover.png') ;
+}
+
+/****** Hotspot 7 ******/
+#spot7{
+	position:absolute;
+	cursor:pointer;	
+	top:283.5px;
+	left: 375.5px;
+	background-image: url('../content/medias/images/m4-15_map_spots-07.png') ;
+}
+
+#spot7:hover{
+	background-image:url('../content/medias/images/m4-15_map_spots-07_hover.png') ;
+}
+
+/****** Hotspot 8 ******/
+#spot8{
+	position:absolute;
+	cursor:pointer;	
+	top:245.5px;
+	left: 450.5px;
+	background-image: url('../content/medias/images/m4-15_map_spots-08.png') ;
+}
+
+#spot8:hover{
+	background-image:url('../content/medias/images/m4-15_map_spots-08_hover.png') ;
+}
+
+/****** Hotspot 9 ******/
+#spot9{
+	position:absolute;
+	cursor:pointer;	
+	top:290.5px;
+	left: 338.5px;
+	background-image: url('../content/medias/images/m4-15_map_spots-09.png') ;
+}
+
+#spot9:hover{
+	background-image:url('../content/medias/images/m4-15_map_spots-09_hover.png') ;
+}
+/* *************************************************
+ * GENERAL
+ * ************************************************/
+body {
+   padding-bottom: 60px;
+   font-family: "Gotham Book", sans-serif, "Myriad Pro";
+   font-size: 16px;
+	background-color:white;
+}
+main{margin-bottom: 40px;}
+
+/* *************************************************
+ * top banner
+ * ************************************************/
+
+#wb-bnr{
+	background: #FFF url(images/banner.png) right bottom no-repeat;
+	&>div.container{
+		min-height:138px;
+	}
+}
+
+#wb-sttl a {
+    /* margin-left: 277px; */
+    width: 55%;
+    display: block;
+    /* font-family: "Myriad Pro", arial, "Gill Sans", "Gill Sans MT", Calibri, sans-serif; */
+    font-family: "Gotham Bold", sans-serif, "Myriad Pro";
+    color: #4c504a;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: normal;
+    text-decoration: none;
+	span{
+    height: 165px;
+    //display: block;
+    vertical-align: middle;
+    display: table-cell;
+	}
+}
+
+
+
+/* *************************************************
+ * FOOTER
+ * ************************************************/
+footer#wb-info{
+    position: fixed!important;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+
+		background-color:#6c6c6c;
+	.backnext{
+		background-color:white;
+		a{
+			padding-top: 8px;
+		}
+	}
+}
+
+/* *************************************************
+ * tools and stuff
+ * ************************************************/
+.nvbar .backnext span{
+	&:before{
+		content:'Page ';
+	}
+}
+
+#wb-bar, #mb-pnl .lng-ofr {
+    height: 50px;
+    padding-top: 20px;
+    vertical-align: bottom;
+    /* background-color: #900f08; */
+    /* min-height: 2.2em; */
+    //z-index: 1;
+}
+/* *************************************************
+ * SUPERMENU
+ * ************************************************/
+
+#wb-sm{
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+	.nvbar{
+	border-left:1px solid black;
+		
+	}
+	.supermenu > li>a.item{
+
+	height:38px;
+    color: $main-red;	
+	&:hover, &:focus{
+		border-bottom: 3px solid $main-red;		
+	}
+}
+}
+
+
+/* *************************************************
+ * IMAGES
+ * ************************************************/
+img.center{
+	margin:auto;
+}
+
+.imgBorder {
+	border: 3px solid #fff;
+	box-shadow: 2px 2px 5px 4px rgba(0,0,0,0.11);
+}
+/* *************************************************
+ * tabbed interface
+ * ************************************************/
+.wb-tabs{
+	margin-bottom:15px;
+	[role="tablist"]{
+		li{
+			a{
+				background-color:$light-bg;
+				color:#fff;
+				&:hover,&:focus{
+					/*background-color: rgba(170,181,51,0.1);*/
+					text-decoration: underline; 
+				}
+				img {
+						width:15em; 
+				}				
+			}
+			&.active{
+				a{
+					border-top:none; /* main-tabbed-border */
+					background-color: $main-red;
+					color:#FFFFFF;
+					-webkit-transition: 0.5s ease;
+					-moz-transition: 0.5s ease;
+					-ms-transition: 0.5s ease;
+					-o-transition: 0.5s ease;
+					transition: 0.5s ease;					
+					padding-top:10px;
+					&:hover,&:focus{
+						border-top:none;
+					}
+				}
+			}
+		}
+		
+		
+	}
+	&> .tabpanels{
+		background:#faf5f5 ;
+	}
+	details{
+		border-radius: 0 4px 4px 4px;	
+	}
+}
+/* *************************************************
+ * ACCORDIONS
+ * ************************************************/
+
+[data-lom-element="accordion"],.accordion{
+	//background-color:red;
+	details{
+		margin-bottom:0;
+		padding:0!important;
+		border-width: 0!important;
+		&[open]{
+			background-color:$pink-ish;
+			summary{
+				background-color:$main-red;
+			}
+		}
+		&:not([open]){
+			summary{
+				background-color:$light-bg;
+			}
+		}
+		
+		summary{
+			color:white;
+			border-radius: 0px;
+			border:$borders solid 1px;
+			padding: 10px 15px;
+			font-weight:600;
+			h2{
+				font-size: 1.1em;
+				
+			}
+		}
+	}
+	ul{
+		padding-bottom:0px;
+	}
+	
+}
+// ----------- OLD ONES ------
+

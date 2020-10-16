@@ -1,0 +1,43 @@
+$encadre-header-bg-color:$modal-header-background-color;
+$encadre-bg-color:$pink-ish;
+$encadre-borders:$borders;
+
+
+.encadrage{
+	border:1px solid $encadre-borders;
+	background-color:$encadre-bg-color;
+	&.circle-bundle{
+		&:before{
+			position:absolute;
+			margin-left: 10px;
+    		margin-top: 5px;
+		}
+		h2,h3{
+			background-color:$encadre-header-bg-color;
+			color:$modal-header-color;
+			padding: 12px 12px 12px 45px;
+			font-size: 1em;	
+			margin-top: 0px;
+		}
+		
+	}
+	&.ribbon-top{
+		h2,h3{
+			padding: 65px 12px 12px 20px;
+    		font-size: 1em;
+    		margin-top: 0px;
+		}
+		
+		
+		padding-top: 0px!important;
+    	padding-left: 0px!important;
+		&:before{
+			position:absolute;
+			margin-left: 0px;
+    		//margin-top: 0px;
+		}
+	}
+	
+	
+	
+}

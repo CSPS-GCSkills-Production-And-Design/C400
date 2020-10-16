@@ -1,0 +1,130 @@
+
+.circle-elements>div>div{
+		display: inline-block;
+		width:49%;
+		&:nth-child(1){
+			text-align: right;
+		}
+	
+		&:nth-child(2){
+			margin-left:-5px;
+		}
+	a{
+		&:focus, &:hover{
+			outline:solid $light-bg 2px;
+		}
+	}
+}
+/* *************************************************
+ * PETROCAN LOGO
+ * ************************************************/
+
+.link-logo{
+	a{
+		 display: block;
+		 text-align: center;
+		 padding: 0px 20%;
+		 font-size: 1.4em;
+		 text-decoration: none;
+		 font-weight: 600;
+		&:before{
+			content: '';
+    		height: 212px;
+    		width: 100%;
+    		display: block;
+    		background-repeat: no-repeat;
+    		background-size: contain;
+		}
+	}
+	&.hidetext a{
+		overflow:hidden;
+		text-indent:-9999px;
+		white-space: nowrap;
+		font-size: 0; 
+		
+		
+	}
+	&.petrocan a:before{background-image: url(images/petrocan.png);}
+	&.gold-medal a:before{background-image: url(images/gold-medal.png);}
+	&.silver-medal a:before{background-image: url(images/silver-medal.png);}
+	&.bronze-medal a:before{background-image: url(images/bronze-medal.png);}
+	&.dude1 a:before{background-image: url(images/m3-14-1.png);}
+	&.dude2 a:before{background-image: url(images/m3-14-2.png);}
+	&.dude3 a:before{background-image: url(images/m3-14-3.png);}
+	&.dude4 a:before{background-image: url(images/m3-14-4.png);}
+	&.dude5 a:before{background-image: url(images/m3-14-5.png);}
+	
+}
+
+
+/* *************************************************
+ * QUIZ SPAWNER
+ * ************************************************/
+ .qs-answers div.LOM-editable {
+    display: inline;
+}
+
+[data-lom-element="activity"]{
+	legend{
+		float:none;
+	}
+	
+	input[type=radio]{
+		// position:absolute;
+	}
+	label {
+		padding-left: 20px;
+		display:block;
+
+	}
+	// ------------------- page OF 
+	.qs-current-info{
+		background-color:$main-red;
+		border-top-left-radius:5px;
+		border-top-right-radius:5px;
+		color:white;
+		padding: 21px 10px 5px 20px;
+		float:none;
+	}
+	
+	.qs-exercise .qs-question,.qs-start-activity{
+		border:1px solid $borders;
+		padding:20px;
+	}
+	&[data-lom-subtype="exam"]{
+		
+		.qs-start-activity,.qs-exercise{
+			border:none;
+		}
+	}
+	.qs-answers{
+		padding-left:40px;
+	}
+	
+	.qs-feedback{
+		position:relative;
+		padding-left:40px;
+		outline-color: transparent;
+		.glyphicon{
+			position:absolute;
+			margin-left:-30px;
+			margin-top:20px;
+		}
+		.qs-right,.qs-wrong{
+			 padding: 10px 40px;
+			 margin: 20px 0px;
+			
+			
+		}
+		.qs-right{border:1px solid green;}
+		.qs-wrong{border:1px solid red;}
+		.qs-right .glyphicon{
+			color:green;			
+		}
+		.qs-wrong .glyphicon{
+			color:red;
+		}
+		
+	}
+	
+}

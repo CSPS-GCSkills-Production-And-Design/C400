@@ -1,0 +1,54 @@
+$bg:#b7b7b7;
+$bg-hover:#464646;
+$border:#fff;
+$bg-current:#900f08;
+
+
+
+
+
+.snap-timeline{
+	position:relative;
+	width:100%;
+	.timeline-holder{
+		display:flex;
+		padding-top: 25px;
+		padding-bottom: 35px;		
+	}
+	a.peg{
+
+		border-bottom:10px solid $bg;
+		padding:0;
+		padding-top:10px;
+		margin:0;
+		height:8px;
+		text-indent: -99999px;
+		outline: 1px solid $border;
+		flex-grow: 100;
+		&.current{
+			border-color: $bg-current;
+			position: relative;
+
+			&:before{
+				background: url('images/icon_status.svg') no-repeat;
+				content: 'url(images/icon_status.svg)';
+				width: 25px;
+				height: 25px;
+				display: inline-block;
+				position: absolute;
+				top: -14px;
+				left: -webkit-calc(50% - 10px);
+				left: -moz-calc(50% - 10px);
+				left: calc(50% - 10px);
+				background-size: contain;
+			}
+		}
+		&:not(.current):focus,&:not(.current):hover{
+			border-color: $bg-hover;
+		}
+	}
+}
+
+
+
+/*END PROGRESS BAR*/
